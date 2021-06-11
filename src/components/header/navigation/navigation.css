@@ -1,0 +1,40 @@
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 15px 50px 15px 100px;
+    border-bottom: solid;
+    border-color: mediumseagreen;
+    border-width: 5px;
+}
+
+
+button{
+    font-size: 120%;
+    border-radius: 5px;
+    border-color:mediumseagreen ;
+    color:white
+}
+.linkButton{
+    background-color: transparent;
+    margin: 0px 10px;
+}
+.searchButton{
+    margin-top: 1px;
+    font-size: 75%;
+    background-color: mediumseagreen;
+}
+
+.search{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+input{
+    border-radius: 5px;
+}

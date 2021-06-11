@@ -1,0 +1,27 @@
+
+section > div{
+    display: flex;
+    width: 100%;
+    margin:100px 0px;
+}
+
+
+section > div > div:first-of-type{
+    text-align: center;
+    width: 50%;
+}
+
+section > div > div:last-child{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section > div > div:last-child > *{
+    margin: 0px;
+    color: white;
+    text-align: justify;
+}
+section > div > div:last-child > h1{
+    color:mediumseagreen;
+}
