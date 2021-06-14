@@ -6,10 +6,20 @@ import Header from '../header/Header.jsx'
 import Footer from '../footer/Footer.jsx'
 import Article from '../sections/section1/Article.jsx'
 class Body extends Component {
-    nombreArticles = 2;
+    nombreArticles = 3;
+
+    onNbrArticlesParent = (arts) => {
+        this.nombreArticles = arts
+        console.log(arts)
+        console.log(this.nombreArticles)
+    }
+    
     displayArticle(int) {
         if (int >= 2 ) {
-            return <Article/>;
+            return <>  
+            <Article titre="Les tartines" onNbrArticles = {this.onNbrArticlesParent} />  
+            <Article titre="Coding School"/>  
+            </>;
         }
     }
     render() {
